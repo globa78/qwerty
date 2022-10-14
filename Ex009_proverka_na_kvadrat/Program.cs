@@ -1,9 +1,7 @@
 ﻿Console.WriteLine("Введите первое число:");
-string input1 = Console.ReadLine();
-int x = int.Parse(input1);
+int x = int.Parse(Console.ReadLine());
 Console.WriteLine("Введите второе число:");
-string input2 = Console.ReadLine();
-int y = int.Parse(input2);
+int y = int.Parse(Console.ReadLine());
 if (x == y*y)
 {
     Console.WriteLine("да");
