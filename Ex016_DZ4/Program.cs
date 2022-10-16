@@ -4,21 +4,10 @@
 //8 -> 2, 4, 6, 8
 Console.WriteLine("Введите число:");
 int x = int.Parse(Console.ReadLine());
-int count = x;
-count = 0;
-if (count<x && x % 2==0)
+for (int i = 1; i <= x; i++)
 {
-    while(count < x)
-{
-    count+=2;
-    Console.WriteLine(count);
-}
-}
-else 
-{
-    while(count < x)
-{
-    Console.WriteLine(count);
-    count+=2;
-}
+    if (i % 2 == 0)
+    {
+        Console.WriteLine(i);
+    }
 }
