@@ -49,5 +49,31 @@ string Method4(int count, string text)
     }
     return result;
 }
-string res = Method4(10, "asdf");
+string res = Method4(10, "z");
 Console.WriteLine(res);
+
+// Method 5 FOR
+
+string Method5(int count, string text)
+{
+    
+    string result = string.Empty;
+    for(int i = 0; i < count; i++)
+    {
+        result = result + text;
+    }
+    return result;
+}
+string res1 = Method5(10, "z");
+Console.WriteLine(res1);
+
+// Method 6 ЦИКЛ В ЦИКЛЕ
+
+for(int i = 2; i <= 10; i++)
+{
+    for(int j = 2; j <= 10; j++)
+    {
+        Console.WriteLine($"{i}*{j}={i*j}");
+    }
+    Console.WriteLine();
+}
