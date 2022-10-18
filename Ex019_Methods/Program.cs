@@ -148,3 +148,36 @@ SelectionSort(arr);
 
 PrintArray(arr);
 
+//2
+int[] arr2 = {1, 5, 4, 3, 2, 6, 7, 1, 1};
+
+void PrintArray2(int[] array) 
+{
+    int count = array.Length;
+    for(int i = 0; i < count; i++) 
+    {
+        System.Console.Write($"{array[i]}");
+    }
+    System.Console.WriteLine();
+}
+void SelectionSort2(int[] array)
+{
+    
+    for(int i = 0; i < array.Length -1; i++)
+    {
+        int minPosition = i;
+
+        for(int j = i + 1; j < array.Length; j++)
+        {
+            if ( array[j] > array[minPosition]) minPosition = j;
+        }
+
+        int temporary = array[i];
+        array[i] = array[minPosition];
+        array[minPosition] = temporary;
+    }
+}
+PrintArray2(arr);
+SelectionSort2(arr);
+
+PrintArray2(arr);
