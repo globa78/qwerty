@@ -78,9 +78,21 @@ result += "]";
 return result;
 }
 
+bool FindNumber(int[] array, int number)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i] == number)
+        return true; 
+    }
+    return false;
+}
 
 
 int[] array = CreateArray(10, -10, 10);
 
+int findNumber = int.Parse(Console.ReadLine());
+
 Console.WriteLine(ArrayToString(array));
 Console.WriteLine(ArrayToString(GetReverseArray(array)));
+Console.WriteLine(FindNumber(array,findNumber));
