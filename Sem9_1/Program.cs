@@ -19,9 +19,9 @@ void getNumbers(int N)
     }
     else
     {
-    System.Console.WriteLine(N);
-    N-=1;
-    getNumbers(N);
+    
+    getNumbers(N-1);    //от 1 до 5
+    System.Console.WriteLine(N); 
     }
 }
 getNumbers(N);*/
